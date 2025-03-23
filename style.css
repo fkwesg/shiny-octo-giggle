@@ -1,7 +1,11 @@
-body{
-    background-color:rgb(230, 230, 250);
-    text-align:center;
-}
-h1{
-    color:rgb(128, 0, 128);
-}
+/* Rectangle 1 */
+
+position: absolute;
+width: 840px;
+height: 139px;
+left: 9px;
+top: 12px;
+
+background: #D9D9D9;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
