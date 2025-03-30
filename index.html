@@ -4,10 +4,31 @@
     <link rel="stylesheet" href ="style.css">
     <meta charset='UTF-8'>
     <title>Главная страница</title>
+    <style>
+    #train {
+      position: relative;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
     <script src="script.js"></script>
     <h1>Это моя первая страница на HTML!</h1>
     <p>Это будет мой первый проект</p>
+    <img id="train" src="https://js.cx/clipart/train.gif">
+    <script>
+    train.onclick = function() {
+      let start = Date.now();
+
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+
+        train.style.left = timePassed / 5 + 'px';
+
+        if (timePassed > 2000) clearInterval(timer);
+
+      }, 20);
+    }
+  </script>
 </body>
 </html>
